@@ -1,0 +1,101 @@
+export default function Hero() {
+  return (
+    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/hero-academy.png"
+          alt="Pasban-E-Wattan Forces Academy"
+          className="w-full h-full object-cover object-[center_20%] animate-hero-zoom"
+        />
+        {/* Overlays */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/65 to-primary/90" />
+        <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-fade-top" />
+      </div>
+
+      {/* Floating particles */}
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        {[
+          "top-[20%] left-[12%] w-1.5 h-1.5 opacity-20",
+          "top-[35%] left-[85%] w-1 h-1 opacity-30 [animation-delay:1s]",
+          "top-[60%] left-[70%] w-2 h-2 opacity-15 [animation-delay:2s]",
+          "top-[15%] left-[55%] w-1.5 h-1.5 opacity-25 [animation-delay:0.5s]",
+          "top-[75%] left-[25%] w-1 h-1 opacity-20 [animation-delay:1.5s]",
+        ].map((cls, i) => (
+          <span key={i} className={`absolute rounded-full bg-gold animate-float ${cls}`} />
+        ))}
+      </div>
+
+      {/* Content */}
+      <div className="container-custom relative z-10 pt-28 pb-24 text-center">
+
+        {/* Eyebrow */}
+        <div className="flex items-center justify-center gap-4 mb-7 animate-fade-up [animation-delay:0.1s]">
+          <span className="block w-10 h-px bg-gold/60" />
+          <span className="section-label">Pakistan&apos;s Premier Forces Academy</span>
+          <span className="block w-10 h-px bg-gold/60" />
+        </div>
+
+        {/* Heading */}
+        <h1 className="flex flex-col items-center leading-none mb-7 animate-fade-up [animation-delay:0.25s]">
+          <span className="font-serif font-black text-white text-[clamp(3rem,9vw,7rem)] tracking-tight drop-shadow-2xl">
+            PASBAN-E-
+          </span>
+          <span className="font-serif font-black text-[clamp(3rem,9vw,7rem)] tracking-tight gold-shimmer-text">
+            WATTAN
+          </span>
+          <span className="font-serif font-black text-white text-[clamp(3rem,9vw,7rem)] tracking-tight drop-shadow-2xl">
+            FORCES
+          </span>
+          <span className="font-serif font-black text-[clamp(2rem,6vw,5rem)] text-stroke-white tracking-[0.22em] mt-1">
+            ACADEMY
+          </span>
+        </h1>
+
+        {/* Tagline */}
+        <p className="text-white/75 text-[clamp(0.875rem,2vw,1.1rem)] max-w-xl mx-auto leading-relaxed mb-10 animate-fade-up [animation-delay:0.45s]">
+          Transforming Aspirations Into Excellence — specialized, disciplined training
+          designed for the future leaders of the Armed Forces.
+        </p>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-12 animate-fade-up [animation-delay:0.6s]">
+          <a href="#admissions" className="btn-primary" id="hero-apply-btn">
+            Apply for Admission
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#programs" className="btn-outline" id="hero-programs-btn">
+            Our Programs
+          </a>
+        </div>
+
+        {/* Service Badges */}
+        <div className="flex flex-wrap items-center justify-center gap-2 animate-fade-up [animation-delay:0.75s]">
+          {["Army", "Navy", "PAF", "ISSB"].map((b) => (
+            <span
+              key={b}
+              className="text-[0.68rem] font-bold tracking-[0.18em] uppercase text-white/55
+                         border border-white/20 px-3.5 py-1.5 rounded-full
+                         hover:border-gold hover:text-gold transition-colors duration-300"
+            >
+              {b}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <a
+        href="#stats"
+        aria-label="Scroll down"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10"
+      >
+        <span className="block w-6 h-9 border-2 border-white/30 rounded-full relative">
+          <span className="absolute top-1.5 left-1/2 -translate-x-1/2 w-1 h-2 bg-gold rounded-full animate-scroll-dot" />
+        </span>
+      </a>
+    </section>
+  );
+}
