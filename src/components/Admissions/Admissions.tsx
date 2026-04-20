@@ -1,5 +1,5 @@
 const steps = [
-  { num: "01", title: "Submit Application", desc: "Fill out the online form or visit our campus in Mandian Abbottabad to complete your application." },
+  { num: "01", title: "Submit Application", desc: "Fill out the online form or visit our campus in Abbottabad to complete your application." },
   { num: "02", title: "Academic Assessment", desc: "Appear for a brief assessment to help us design your personalized training & discipline plan." },
   { num: "03", title: "Enroll & Begin", desc: "Complete enrollment, receive your schedule, and begin your journey to becoming a Commissioned Officer." },
 ];
@@ -36,7 +36,7 @@ export default function Admissions() {
                   <input 
                     id="adm-phone" 
                     type="tel" 
-                    placeholder="0341 0542425" 
+                    placeholder="0343 8338958" 
                     className="w-full px-4 py-3.5 font-sans text-[0.9rem] text-primary bg-cream border border-gold/20 rounded outline-none transition-all focus:border-gold focus:bg-white focus:ring-4 focus:ring-gold/5" 
                     required 
                   />
@@ -113,8 +113,8 @@ export default function Admissions() {
             
             <div className="mt-6 pt-8 border-t border-gold/10 flex flex-col gap-2.5">
               <p className="text-[0.7rem] font-bold tracking-[0.15em] uppercase text-slate-400">Direct Helpline</p>
-              <a href="tel:+923410542425" className="font-serif text-2xl font-bold text-primary hover:text-gold transition-colors">
-                0341-0542425
+              <a href="tel:+923438338958" className="font-serif text-2xl font-bold text-primary hover:text-gold transition-colors">
+                0343-8338958
               </a>
               <div className="flex items-center gap-2 text-xs text-slate-400 mt-1">
                 <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />

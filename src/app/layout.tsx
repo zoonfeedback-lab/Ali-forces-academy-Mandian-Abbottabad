@@ -9,13 +9,13 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Pasban-E-Wattan Forces Academy | Mandian, Abbottabad",
+  title: "Ali Forces Academy Abbottabad | Pakistan's Premier Academy",
   description:
-    "Pakistan's premier forces preparation academy in Abbottabad. Expert-led training for Initial Tests, ISSB, Army, Navy & PAF selection. Located at Mandian, Abbottabad.",
+    "Pakistan's premier forces preparation academy in Abbottabad. Expert-led training for Initial Tests, ISSB, Army, Navy & PAF selection.",
   keywords:
-    "Pasban-E-Wattan, Ali Forces Academy, ISSB preparation, military test Pakistan, Army selection, Abbottabad forces academy, Mandian Abbottabad",
+    "Ali Forces Academy, Abbottabad, ISSB preparation, military test Pakistan, Army selection, Mandian Abbottabad",
   openGraph: {
-    title: "Pasban-E-Wattan Forces Academy — Abbottabad",
+    title: "Ali Forces Academy Abbottabad — Excellence in Training",
     description:
       "Transforming Aspirations Into Excellence. Specialized, disciplined training for the future leaders of Pakistan's Armed Forces.",
     type: "website",

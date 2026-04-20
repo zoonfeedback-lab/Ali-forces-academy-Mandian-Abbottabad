@@ -32,14 +32,14 @@ export default function Navbar() {
       <div className="container-custom flex items-center justify-between gap-6">
 
         {/* Logo */}
-        <a href="#" aria-label="Pasban-E-Wattan Forces Academy home" className="flex items-center gap-3 flex-shrink-0">
-          <img src="/logo.png" alt="Pasban-E-Wattan Logo" className="w-10 h-10 object-contain drop-shadow-[0_0_8px_rgba(197,160,89,0.5)]" />
+        <a href="#" aria-label="Ali Forces Academy home" className="flex items-center gap-3 flex-shrink-0">
+          <img src="/logo.png" alt="Ali Forces Academy Logo" className="w-10 h-10 object-contain drop-shadow-[0_0_8px_rgba(197,160,89,0.5)]" />
           <span className="flex flex-col leading-tight">
             <span className="text-[0.72rem] font-extrabold tracking-[0.13em] text-white uppercase">
-              Pasban-E-Wattan
+              Ali Forces Academy
             </span>
             <span className="text-[0.6rem] font-medium tracking-[0.18em] text-gold uppercase">
-              Forces Academy
+              Abbottabad
             </span>
           </span>
         </a>
@@ -67,14 +67,14 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           {/* Phone */}
           <a
-            href="tel:+923410542425"
+            href="tel:+923438338958"
             className="hidden lg:flex items-center gap-1.5 text-[0.72rem] font-semibold
                        text-white/65 hover:text-gold transition-colors duration-300"
           >
             <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
               <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
             </svg>
-            0341-0542425
+            0343-8338958
           </a>
 
           {/* CTA */}

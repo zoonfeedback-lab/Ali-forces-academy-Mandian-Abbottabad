@@ -1,8 +1,8 @@
 const stats = [
   {
-    value: "100%",
-    label: "Recommendation",
-    detail: "Based on 5 reviews, our proven methodology ensures the highest success rates for candidates.",
+    value: "Elite",
+    label: "Institution",
+    detail: "A trusted and reliable institute specialized in ISSB and Cadet College training.",
     icon: "★",
     color: "gold",
   },

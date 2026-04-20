@@ -4,12 +4,12 @@ export default function Hero() {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero-academy.png"
-          alt="Pasban-E-Wattan Forces Academy"
-          className="w-full h-full object-cover object-[center_20%] animate-hero-zoom"
+          src="/academypic.jpg"
+          alt="Ali Forces Academy Campus"
+          className="w-full h-full object-cover object-center animate-hero-zoom opacity-90 transition-opacity"
         />
         {/* Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/65 to-primary/90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/75 to-primary/90" />
         <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-fade-top" />
       </div>
 
@@ -38,27 +38,24 @@ export default function Hero() {
 
         {/* Heading */}
         <h1 className="flex flex-col items-center leading-none mb-7 animate-fade-up [animation-delay:0.25s]">
-          <span className="font-serif font-black text-white text-[clamp(3rem,9vw,7rem)] tracking-tight drop-shadow-2xl">
-            PASBAN-E-
+          <span className="font-serif font-black text-white text-[clamp(2.5rem,8vw,6rem)] tracking-tight drop-shadow-2xl">
+            ALI FORCES
           </span>
-          <span className="font-serif font-black text-[clamp(3rem,9vw,7rem)] tracking-tight gold-shimmer-text">
-            WATTAN
+          <span className="font-serif font-black text-[clamp(2.5rem,8vw,6rem)] tracking-tight gold-shimmer-text uppercase">
+            Academy
           </span>
           <div className="absolute -top-6 left-1/2 -translate-x-1/2 flex items-center gap-2 px-4 py-1.5 bg-red-600 text-white rounded-full text-[0.65rem] font-bold tracking-widest uppercase shadow-lg animate-pulse z-20">
             <span className="w-1.5 h-1.5 rounded-full bg-white opacity-75" />
             PMA 158 Long Course Now Open
           </div>
-          <span className="font-serif font-black text-white text-[clamp(3rem,9vw,7rem)] tracking-tight drop-shadow-2xl">
-            FORCES
-          </span>
-          <span className="font-serif font-black text-[clamp(2rem,6vw,5rem)] text-stroke-white tracking-[0.22em] mt-1">
-            ACADEMY
+          <span className="font-serif font-black text-white text-[clamp(2.5rem,8vw,5.5rem)] tracking-tight drop-shadow-2xl">
+            ABBOTTABAD
           </span>
         </h1>
 
         {/* Tagline */}
         <p className="text-white/75 text-[clamp(0.875rem,2vw,1.1rem)] max-w-2xl mx-auto leading-relaxed mb-10 animate-fade-up [animation-delay:0.45s]">
-          Ali Forces Academy is now <strong className="text-gold">Pasban-E-Wattan Forces Academy</strong> — a prestigious project of Pasban-E-Wattan Schools & College, specializing in elite training for individuals aspiring to join the Armed Forces.
+          Trusted and Reliable Institution for training of ISSB and Cadet Colleges. Providing elite preparation for the future leaders of Pakistan.
         </p>
 
         {/* CTA Buttons */}
