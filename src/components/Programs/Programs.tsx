@@ -2,10 +2,10 @@ const programs = [
   {
     id: "initial-tests",
     tag: "Core Program",
-    title: "Initial Tests",
+    title: "Initial Tests Preparation",
     subtitle: "Army • Navy • PAF",
-    desc: "Comprehensive preparation for Intelligence and Academic tests for Army, Navy, and PAF through structured study plans and expert coaching.",
-    features: ["ISSB Intelligence Tests", "Academic & Math", "Pattern Recognition", "Mock Examinations"],
+    desc: "Comprehensive preparation for Intelligence and Academic tests for Army, Navy, and PAF selection boards, now including PMA 158 Long Course training.",
+    features: ["PMA 158 Long Course Prep", "Written, Verbal & IQ Tests", "Academic & Math Coaching", "Mock Examinations"],
     featured: true,
     icon: "📋",
   },

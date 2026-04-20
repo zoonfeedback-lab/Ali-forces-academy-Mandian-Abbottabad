@@ -32,8 +32,8 @@ export default function Navbar() {
       <div className="container-custom flex items-center justify-between gap-6">
 
         {/* Logo */}
-        <a href="#" aria-label="Pasban-E-Wattan Forces Academy home" className="flex items-center gap-2.5 flex-shrink-0">
-          <span className="text-2xl text-gold drop-shadow-[0_0_8px_rgba(197,160,89,0.7)]">⚔</span>
+        <a href="#" aria-label="Pasban-E-Wattan Forces Academy home" className="flex items-center gap-3 flex-shrink-0">
+          <img src="/logo.png" alt="Pasban-E-Wattan Logo" className="w-10 h-10 object-contain drop-shadow-[0_0_8px_rgba(197,160,89,0.5)]" />
           <span className="flex flex-col leading-tight">
             <span className="text-[0.72rem] font-extrabold tracking-[0.13em] text-white uppercase">
               Pasban-E-Wattan

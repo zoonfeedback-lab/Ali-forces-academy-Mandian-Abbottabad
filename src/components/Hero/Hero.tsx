@@ -44,6 +44,10 @@ export default function Hero() {
           <span className="font-serif font-black text-[clamp(3rem,9vw,7rem)] tracking-tight gold-shimmer-text">
             WATTAN
           </span>
+          <div className="absolute -top-6 left-1/2 -translate-x-1/2 flex items-center gap-2 px-4 py-1.5 bg-red-600 text-white rounded-full text-[0.65rem] font-bold tracking-widest uppercase shadow-lg animate-pulse z-20">
+            <span className="w-1.5 h-1.5 rounded-full bg-white opacity-75" />
+            PMA 158 Long Course Now Open
+          </div>
           <span className="font-serif font-black text-white text-[clamp(3rem,9vw,7rem)] tracking-tight drop-shadow-2xl">
             FORCES
           </span>
@@ -53,9 +57,8 @@ export default function Hero() {
         </h1>
 
         {/* Tagline */}
-        <p className="text-white/75 text-[clamp(0.875rem,2vw,1.1rem)] max-w-xl mx-auto leading-relaxed mb-10 animate-fade-up [animation-delay:0.45s]">
-          Transforming Aspirations Into Excellence — specialized, disciplined training
-          designed for the future leaders of the Armed Forces.
+        <p className="text-white/75 text-[clamp(0.875rem,2vw,1.1rem)] max-w-2xl mx-auto leading-relaxed mb-10 animate-fade-up [animation-delay:0.45s]">
+          Ali Forces Academy is now <strong className="text-gold">Pasban-E-Wattan Forces Academy</strong> — a prestigious project of Pasban-E-Wattan Schools & College, specializing in elite training for individuals aspiring to join the Armed Forces.
         </p>
 
         {/* CTA Buttons */}
@@ -73,12 +76,14 @@ export default function Hero() {
 
         {/* Service Badges */}
         <div className="flex flex-wrap items-center justify-center gap-2 animate-fade-up [animation-delay:0.75s]">
-          {["Army", "Navy", "PAF", "ISSB"].map((b) => (
+          {["Armed Forces", "School", "Academic Camp", "ISSB", "Hostel Facility Available"].map((b) => (
             <span
               key={b}
-              className="text-[0.68rem] font-bold tracking-[0.18em] uppercase text-white/55
-                         border border-white/20 px-3.5 py-1.5 rounded-full
-                         hover:border-gold hover:text-gold transition-colors duration-300"
+              className={`text-[0.68rem] font-bold tracking-[0.18em] uppercase 
+                         border px-3.5 py-1.5 rounded-full transition-colors duration-300
+                         ${b === 'Hostel Facility Available' 
+                           ? 'bg-gold text-primary border-gold hover:bg-gold-bright shadow-gold' 
+                           : 'text-white/55 border-white/20 hover:border-gold hover:text-gold'}`}
             >
               {b}
             </span>

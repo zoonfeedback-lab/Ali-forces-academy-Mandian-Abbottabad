@@ -1,8 +1,8 @@
 const links = {
   Programs: ["Initial Tests", "ISSB Preparation", "Physical Training", "Academic Excellence"],
-  Admissions: ["How to Apply", "Eligibility", "Fee Structure", "Scholarships"],
+  Admissions: ["How to Apply", "Eligibility", "Fee Structure", "Hostel Facilities"],
   About: ["Our Mission", "Faculty", "Facilities", "Success Stories"],
-  Contact: ["Mandian Abbottabad", "0341-0542425", "babarzeb@yahoo.com", "Always Open"],
+  Contact: ["Mandian Abbottabad", "0341-0542425", "0314-5028856", "babarzeb@yahoo.com"],
 };
 
 export default function Footer() {
@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="border-b border-gold/10 py-8">
         <div className="container-custom flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3.5">
-            <span className="text-3xl text-gold drop-shadow-[0_0_8px_rgba(197,160,89,0.4)]">⚔</span>
+            <img src="/logo.png" alt="Pasban-E-Wattan Logo" className="w-12 h-12 object-contain brightness-110" />
             <div className="flex flex-col">
               <span className="text-[0.95rem] font-bold text-white tracking-wide">
                 Pasban-E-Wattan Forces Academy
@@ -27,7 +27,7 @@ export default function Footer() {
           
           <div className="flex items-center gap-3">
             {[
-              { n: 'f', u: 'https://facebook.com/pasban.e.wattan.school.college.forces.abbottabad', label: 'Facebook' },
+              { n: 'f', u: 'https://www.facebook.com/pasban.e.wattan.school.college.forces.abbottabad', label: 'Facebook' },
               { n: 'y', u: '#', label: 'YouTube' },
               { n: 'w', u: 'https://wa.me/923410542425', label: 'WhatsApp' }
             ].map((s) => (

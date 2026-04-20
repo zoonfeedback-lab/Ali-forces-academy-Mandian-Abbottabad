@@ -23,8 +23,8 @@ export default function Headquarters() {
                 <div className="flex flex-col gap-1">
                   <div className="text-[0.7rem] font-bold tracking-[0.15em] uppercase text-gold">Main Campus</div>
                   <div className="text-[0.875rem] text-white/75 leading-relaxed">
-                    Opposite Makki Masjid, Makki Street, Javaid Shaheed Road<br />
-                    Mandian Abbottabad, Pakistan
+                    Makki Street near Makki Masjid, Javed Shaheed Road <br />
+                    Mandian / Jinnahabad Abbottabad — 22010
                   </div>
                 </div>
               </div>
@@ -33,8 +33,9 @@ export default function Headquarters() {
                 <span className="text-xl shrink-0 mt-1">📞</span>
                 <div className="flex flex-col gap-1">
                   <div className="text-[0.7rem] font-bold tracking-[0.15em] uppercase text-gold">Admission Helpline</div>
-                  <div className="text-[0.875rem] text-white/75 leading-relaxed font-serif text-lg">
-                    0341-0542425
+                  <div className="text-[0.875rem] text-white/75 leading-relaxed font-serif">
+                    0341-0542425 / 0314-5028856 <br />
+                    <span className="text-[0.7rem] font-sans opacity-60">Landline: 0992-860163</span>
                   </div>
                 </div>
               </div>
