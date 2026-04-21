@@ -43,7 +43,10 @@ const programs = [
 
 export default function Programs() {
   return (
-    <section id="programs" className="py-28 bg-cream relative" aria-label="Academy programs">
+    <section id="programs" className="py-28 bg-primary relative overflow-hidden" aria-label="Academy programs">
+      {/* Decorative Background Grid */}
+      <div className="absolute inset-0 bg-grid opacity-[0.05]" />
+
       <div className="container-custom">
         {/* Decorative Background Text */}
         <div className="absolute top-20 left-1/2 -translate-x-1/2 text-[10vw] font-black text-primary opacity-[0.03] tracking-[0.3em] pointer-events-none whitespace-nowrap hidden lg:block">
@@ -51,11 +54,11 @@ export default function Programs() {
         </div>
 
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6 animate-fade-up">
           <div className="flex flex-col gap-3">
-            <span className="section-label">Academic Excellence</span>
-            <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-extrabold text-primary leading-tight">
-              Our Specialized Programs
+            <span className="section-label text-gold font-black">Academic Excellence</span>
+            <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-extrabold text-white leading-tight">
+              Our Specialized <span className="gold-shimmer-text py-1">Programs</span>
             </h2>
           </div>
           <a href="#admissions" className="group flex items-center gap-2 text-[0.8rem] font-bold tracking-widest uppercase text-primary whitespace-nowrap transition-all border-b border-gold pb-0.5 hover:text-gold">
@@ -73,14 +76,15 @@ export default function Programs() {
               key={p.id}
               id={`program-${p.id}`}
               className={`
-                relative bg-white border border-gold/20 rounded-2xl p-9 flex flex-col gap-2.5 transition-all duration-300 overflow-hidden hover:shadow-gold-lg hover:-translate-y-1
-                group after:absolute after:inset-0 after:bg-gradient-to-br after:from-gold/5 after:to-transparent after:opacity-0 after:transition-opacity hover:after:opacity-100
+                relative bg-white/[0.03] border border-white/10 rounded-2xl p-9 flex flex-col gap-2.5 transition-all duration-500 overflow-hidden hover:shadow-hero hover:-translate-y-2
+                group after:absolute after:inset-0 after:bg-gradient-to-br after:from-gold/5 after:to-transparent after:opacity-0 after:transition-opacity hover:after:opacity-100 animate-fade-up
                 ${i === 0 ? 'lg:col-span-5 lg:row-span-2' : ''}
                 ${i === 1 ? 'lg:col-span-7 lg:row-span-1' : ''}
                 ${i === 2 ? 'lg:col-span-4 lg:row-span-1' : ''}
                 ${i === 3 ? 'lg:col-span-3 lg:row-span-1' : ''}
-                ${p.featured ? 'bg-primary border-transparent' : ''}
+                ${p.featured ? 'bg-white/[0.08] border-gold/30 shadow-gold' : ''}
               `}
+              style={{ animationDelay: `${0.1 + i * 0.1}s` }}
             >
               {p.featured && (
                 <span className="inline-block text-[0.65rem] font-bold tracking-[0.15em] uppercase text-primary bg-gold px-3 py-1 rounded-full mb-2 self-start">
@@ -94,21 +98,21 @@ export default function Programs() {
                 {p.tag}
               </span>
               
-              <h3 className={`font-serif text-xl font-bold leading-snug ${p.featured ? 'text-white' : 'text-primary'}`}>
+              <h3 className={`font-serif text-xl font-bold leading-snug text-white`}>
                 {p.title}
               </h3>
               
-              <p className={`text-[0.75rem] font-medium tracking-wide ${p.featured ? 'text-white/50' : 'text-slate-500'}`}>
+              <p className={`text-[0.75rem] font-medium tracking-wide text-gold/70`}>
                 {p.subtitle}
               </p>
               
-              <p className={`text-sm leading-relaxed ${p.featured ? 'text-white/70' : 'text-slate-500'} mb-2`}>
+              <p className={`text-sm leading-relaxed text-white/60 mb-2`}>
                 {p.desc}
               </p>
               
-              <ul className="flex flex-col gap-1.5 mt-auto pt-3 border-t border-gold/10">
+              <ul className="flex flex-col gap-1.5 mt-auto pt-3 border-t border-white/10">
                 {p.features.map((f) => (
-                  <li key={f} className={`flex items-center gap-2.5 text-[0.8rem] ${p.featured ? 'text-white/80' : 'text-slate-500'}`}>
+                  <li key={f} className={`flex items-center gap-2.5 text-[0.8rem] text-white/70`}>
                     <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0" aria-hidden="true" />
                     {f}
                   </li>

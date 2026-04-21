@@ -23,12 +23,15 @@ export default function Navbar() {
   return (
     <header
       id="navbar"
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-primary/95 backdrop-blur-xl shadow-2xl border-b border-gold/20 py-3"
-          : "bg-transparent py-5"
+          ? "bg-primary/95 backdrop-blur-2xl shadow-hero border-b border-gold/20 py-3"
+          : "bg-transparent py-6"
       }`}
     >
+      {/* Top shimmer line on scroll */}
+      <div className={`absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent opacity-0 transition-opacity duration-500 ${scrolled ? 'opacity-100' : ''}`} />
+
       <div className="container-custom flex items-center justify-between gap-6">
 
         {/* Logo */}

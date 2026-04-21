@@ -9,17 +9,21 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer id="footer" className="bg-primary text-white" aria-label="Site footer">
+    <footer id="footer" className="bg-[#051a11] text-white relative overflow-hidden" aria-label="Site footer">
+      {/* Texture background */}
+      <div className="absolute inset-0 bg-grid opacity-[0.02] pointer-events-none" />
+
       {/* Top bar with branding */}
-      <div className="border-b border-gold/10 py-8">
+      <div className="border-b border-white/5 py-10 relative z-10">
+
         <div className="container-custom flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-3.5">
-            <img src="/logo.png" alt="Ali Forces Academy Logo" className="w-12 h-12 object-contain brightness-110" />
+          <div className="flex items-center gap-3.5 group cursor-default">
+            <img src="/logo.png" alt="Ali Forces Academy Logo" className="w-12 h-12 object-contain brightness-110 drop-shadow-gold transition-transform group-hover:scale-110" />
             <div className="flex flex-col">
-              <span className="text-[0.95rem] font-bold text-white tracking-wide">
-                Ali Forces Academy Abbottabad
+              <span className="text-[1.05rem] font-bold text-white tracking-wide group-hover:text-gold transition-colors">
+                Ali Forces Academy
               </span>
-              <span className="text-[0.65rem] font-semibold tracking-[.15em] text-gold uppercase mt-0.5">
+              <span className="text-[0.65rem] font-semibold tracking-[.15em] text-gold uppercase mt-0.5 opacity-80">
                 Pakistan&apos;s Elite Training Institute
               </span>
             </div>
@@ -45,7 +49,7 @@ export default function Footer() {
       </div>
 
       {/* Main Link Grid */}
-      <div className="container-custom grid grid-cols-2 md:grid-cols-4 gap-12 py-16">
+      <div className="container-custom grid grid-cols-2 md:grid-cols-4 gap-12 py-20 relative z-10 animate-fade-up">
         {Object.entries(links).map(([group, items]) => (
           <div key={group} className="flex flex-col gap-5">
             <h3 className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-gold">

@@ -10,7 +10,6 @@ export default function Hero() {
         />
         {/* Overlays */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/75 to-primary/90" />
-        <div className="absolute bottom-0 left-0 right-0 h-2/5 bg-fade-top" />
       </div>
 
       {/* Floating particles */}
