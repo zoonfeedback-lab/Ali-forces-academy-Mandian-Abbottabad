@@ -2,18 +2,20 @@ export default function Headquarters() {
   return (
     <section id="branches" className="py-32 bg-primary relative overflow-hidden" aria-label="Headquarters section">
       {/* Background decoration */}
+      <div className="absolute inset-0 bg-grid opacity-[0.03] pointer-events-none" />
       <div className="absolute -top-[200px] -right-[200px] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(197,160,89,0.08)_0%,transparent_70%)] pointer-events-none" />
 
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           {/* Left: Content */}
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 animate-fade-up">
             <span className="section-label">Strategic Presence</span>
             <h2 className="font-serif text-[clamp(2rem,4vw,3.25rem)] font-extrabold text-white leading-tight">
               Abbottabad <br />
-              <span className="text-gold">Headquarters</span>
+              <span className="gold-shimmer-text">Headquarters</span>
             </h2>
             <p className="text-[0.95rem] leading-relaxed text-white/60 max-w-lg">
+
               Nestled in the historical military hub of Pakistan, our main campus provides the ideal environment for rigorous training and discipline. Ali Forces Academy serves as a cornerstone for future leaders in Abbottabad.
             </p>
 
@@ -67,8 +69,8 @@ export default function Headquarters() {
           </div>
 
           {/* Right: Visual */}
-          <div className="relative group">
-            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-[0_32px_80px_rgba(0,0,0,0.5)] border border-gold/20">
+          <div className="relative group animate-fade-up [animation-delay:0.3s]">
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-hero border border-gold/20">
               <img
                 src="/abbottabad-mountains.png"
                 alt="Abbottabad mountains"

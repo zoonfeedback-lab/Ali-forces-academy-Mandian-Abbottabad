@@ -64,4 +64,15 @@
   .bg-fade-top {
     background: linear-gradient(to top, #f8f5ef 0%, transparent 100%);
   }
+
+  .bg-dots {
+    background-image: radial-gradient(#c5a059 0.8px, transparent 0.8px);
+    background-size: 24px 24px;
+  }
+
+  .bg-grid {
+    background-image: linear-gradient(rgba(197,160,89,0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(197,160,89,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
 }
